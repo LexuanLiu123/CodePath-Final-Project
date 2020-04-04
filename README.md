@@ -44,21 +44,6 @@ Users will be able to join study/work rooms with specific tags with a global pro
 * Friend feature; users can create personal rooms with friends
 * User can make study related posts where other people can like and comment (focuses on the sense of community)
 
-
-### 2. Screen Archetypes
-
-* Login 
-* Register - User signs up or logs into their account
-   * Upon Download/Reopening of the application, the user is prompted to log in to gain access to their profile information to be properly matched with another person. 
-* Messaging Screen - Chat for users to communicate (direct 1-on-1)
-   * Upon selecting music choice users matched and message screen opens
-* Profile Screen 
-   * Allows user to upload a photo and fill in information that is interesting to them and others
-* Song Selection Screen.
-   * Allows user to be able to choose their desired song, artist, genre of preference and begin listening and interacting with others.
-* Settings Screen
-   * Lets people change language, and app notification settings.
-
 ### 2. Screen Archetypes
 
 * Login
