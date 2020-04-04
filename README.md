@@ -15,7 +15,6 @@ A productivity app that is designed to keep any individual on track of work duri
 Users will be able to join study/work rooms with specific tags with a global productivity timer (Pomodoro method) or rooms with a silent video calling feature. The rooms are designed to create a sense time and community that might be lacking in this time of quarantine.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 
 - **Category:** Productivity
 - **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer as a website. Functionality wouldn't be limited to mobile devices as long as the device contains a built in camera/microphone. However mobile version could potentially have more features.
@@ -28,22 +27,6 @@ Users will be able to join study/work rooms with specific tags with a global pro
 
 ### 1. User Stories (Required and Optional)
 
-Required Must-have Stories
-
-User logs in to access previous chats and preference settings
-User picks what their favorite artist/genre/etc. (Think Spotify interface)
-Matches have a chat window to get to know each other, with the ability to skip music and unmatch (Tinder Style).
-Profile pages for each user
-Settings (Accesibility, Notification, General, etc.)
-Optional Nice-to-have Stories
-
-Log of past songs/people with album art covers matching
-Page of most played songs (i.e. songs that most users are connecting through)
-Profile Add-On: Top music choices, etc.
-Optional Shuffle Button (i.e. random encounter/random song)
-Listening/Encounter Queue
-
-
 **Required Must-have Stories**
 
 * User logs in to access their home page where recommended study rooms are available
@@ -55,17 +38,43 @@ Listening/Encounter Queue
 
 **Optional Nice-to-have Stories**
 
-* 
-* ...
+* Users can collect points based on their study time/habits and level up; each level up unlocks additional features of the app (create own room)
+* Chat rooms inside study rooms
+* Star feature where user can save their favourite study room
+* Friend feature; users can create personal rooms with friends
+* User can make study related posts where other people can like and comment (focuses on the sense of community)
+
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login 
+* Register - User signs up or logs into their account
+   * Upon Download/Reopening of the application, the user is prompted to log in to gain access to their profile information to be properly matched with another person. 
+* Messaging Screen - Chat for users to communicate (direct 1-on-1)
+   * Upon selecting music choice users matched and message screen opens
+* Profile Screen 
+   * Allows user to upload a photo and fill in information that is interesting to them and others
+* Song Selection Screen.
+   * Allows user to be able to choose their desired song, artist, genre of preference and begin listening and interacting with others.
+* Settings Screen
+   * Lets people change language, and app notification settings.
+
+### 2. Screen Archetypes
+
+* Login
+* Register - User signs up or logs into their account 
+   * Upon Download/Reopening of the application, the user is prompted to log in to gain access to their profile information to join study rooms.
+   * User will be asked to click on the tags they are interested in to get a more personalized home page.
+* Home page - A display of various study rooms where users can choose to join
+   * Table view of study rooms with cover picture, title, and description
+* Profile Screen
+   * Allows user to upload a photo and fill in information and change interest tags
+   * Progress bar for point collection
+* Study Room with timer
+   * At the middle of screen user sees a global timer either in break/study.
+   * At the bottom of screen shows a list of users in the same study room.
+* Study Room with video chat
+   * Table view of users video camera
 
 ### 3. Navigation
 
