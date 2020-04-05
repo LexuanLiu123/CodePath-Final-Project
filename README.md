@@ -1,7 +1,7 @@
 Group Project
 ===
 
-# APP_NAME_HERE
+# APARTLY
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -63,26 +63,14 @@ Users will be able to join study/work rooms with specific tags with a global pro
 
 ### 3. Navigation
 
-**Tab Navigation** (Tab to Screen)
-
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
-
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* If first time opens app
+   * Get Started -> If Login
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-
-### [BONUS] Digital Wireframes & Mockups
+<img src="https://imgur.com/FqsWb9J.png" width=600>
+<img src="https://imgur.com/Gbuv6jU.png" width=600>
 
 ### [BONUS] Interactive Prototype
 
