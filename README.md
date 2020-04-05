@@ -63,10 +63,17 @@ Users will be able to join study/work rooms with specific tags with a global pro
 
 ### 3. Navigation
 
-**Flow Navigation** (Screen to Screen)
+**Tab Navigation** (Tab to Screen)
 
-* If first time opens app
-   * Get Started -> If Login
+* Home page (room selection)
+* Profile
+* Settings
+
+**Flow Navigation** (Screen to Screen)
+* Forced Log-in -> Account creation if no log in is available
+* Room Selection -> Popup for timer or video room -> Jumps to Chat
+* Profile -> Text field to be modified. 
+* Settings -> Toggle settings
 
 ## Wireframes
 <img src="https://imgur.com/FqsWb9J.png" width=600>
