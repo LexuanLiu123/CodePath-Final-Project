@@ -83,9 +83,52 @@ Users will be able to join study/work rooms with specific tags with a global pro
 
 ## Schema 
 [This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+Property  |  Type  |          Description  
+---------------------------------------------------
+email       String          email for login
+password    String        password for login
+username    String         user's profile name
+tags        Array        stores user's interests
+profilePic  File            profile picture
+description String        profile description
+roomUsers   Array         users in the same room
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+Sign in Screen
+---------------
+  - (Create/Post) - create a new account (save email and password)
+  
+Home Feed Screen
+-----------------
+  - (Read/Get) - Fetching tags for user's feed
+        let query = PFQuery(className:"Tag")
+        query.whereKey("username", equalTo: currentUser)
+        query.order(byDescending: "priority")
+        query.findObjectsInBackground { (tags: [PFObject]?, error: Error?) in
+           if let error = error { 
+              print(error.localizedDescription)
+           } else if let tag = tags {
+              print("Successfully retrieved \(tags.count) tags.")
+          // TODO: Do something with tags...
+           }
+        }
+  - (Read/Get) - username and profile pic
+  
+Time Screen
+------------
+  - (Read/Get) - usernames appear in study room
+
+Video Screen
+------------
+  - (Read/Get) - usernames appear in study room
+  - (Create/Post) - create a zoom room
+  
+Profile Screen
+--------------
+  - (Read/Get) - username, profile pic, and description
+  
+
+  
+  
