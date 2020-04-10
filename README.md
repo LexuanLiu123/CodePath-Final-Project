@@ -99,22 +99,22 @@ roomUsers   Array         users in the same room
 Sign up Screen
 ---------------
   - (Create/Post) - create a new account (save email and password)
-        var user = PFUser()
-        user.username = username.text
-        user.password = password.text
-        
-        user.signUpInBackground { (success, error) in
-            if success{
-                self.performSegue(withIdentifier: "loginSegue", sender: self)
-            }
-            else{
-                print("Something went wrong signing up \(error?.localizedDescription)")
-            }
-        }
-        
+          var user = PFUser()
+          user.username = username.text
+          user.password = password.text
+          user.signUpInBackground { (success, error) in
+              if success{
+                  self.performSegue(withIdentifier: "loginSegue", sender: self)
+              }
+              else{
+                  print("Something went wrong signing up \(error?.localizedDescription)")
+              }
+          }
+
  Sign in screen:
  ---------------
    - (Read/Get) - user email and possword to sign in
+   
         let usernameText = username.text
         let passwordText = password.text
         
@@ -131,6 +131,7 @@ Sign up Screen
 Home Feed Screen
 -----------------
   - (Read/Get) - Fetching tags for user's feed
+  
         let query = PFQuery(className:"Tag")
         query.whereKey("username", equalTo: currentUser)
         query.order(byDescending: "priority")
@@ -142,6 +143,7 @@ Home Feed Screen
           // TODO: Do something with tags...
            }
         }
+        
   - (Read/Get) - username and profile pic
   
 Time Screen
