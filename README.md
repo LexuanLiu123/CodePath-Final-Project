@@ -99,6 +99,7 @@ roomUsers   Array         users in the same room
 Sign up Screen
 ---------------
   - (Create/Post) - create a new account (save email and password)
+  
           var user = PFUser()
           user.username = username.text
           user.password = password.text
@@ -114,18 +115,19 @@ Sign up Screen
  Sign in screen:
  ---------------
    - (Read/Get) - user email and possword to sign in
-   
-        let usernameText = username.text
-        let passwordText = password.text
+    
+          let usernameText = username.text
+          let passwordText = password.text
         
-        PFUser.logInWithUsername(inBackground: usernameText!, password: passwordText!) { (user, error) in
+          PFUser.logInWithUsername(inBackground: usernameText!, password: passwordText!) { (user, error) in
             if(user != nil){
                 self.performSegue(withIdentifier: "loginSegue", sender: self)
-            }
+              }
             else{
                   print("Something went wrong logging in \(error?.localizedDescription)")
-            }
-        }
+             }
+           }
+         }
  
   
 Home Feed Screen
