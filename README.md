@@ -30,7 +30,7 @@ Users will be able to join study/work rooms with specific tags with a global pro
 **Required Must-have Stories**
 
 * Login page (DONE) http://g.recordit.co/UQtXtzmK8u.gif
-* User logs in to access their home page where recommended study rooms are available 
+* User logs in to access their home page where recommended study rooms are available (DONE)
 * User picks their study rooms with a global timer (NEARLY DONE) http://g.recordit.co/m30uCEm28x.gif
 * User picks their study rooms with a video chat
 * Personalized/ default home page for each user
