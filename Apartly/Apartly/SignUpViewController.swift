@@ -1,14 +1,14 @@
 //
-//  ApratlyLoginViewController.swift
+//  SignUpViewController.swift
 //  Apartly
 //
-//  Created by Mubarek Mussa on 4/24/20.
+//  Created by Mubarek Mussa on 4/28/20.
 //  Copyright © 2020 codepath. All rights reserved.
 //
 
 import UIKit
 
-class ApratlyLoginViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
