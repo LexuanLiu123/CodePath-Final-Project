@@ -31,8 +31,8 @@ Users will be able to join study/work rooms with specific tags with a global pro
 
 * Login page (DONE) http://g.recordit.co/UQtXtzmK8u.gif 
 * User logs in to access their home page where recommended study rooms are available (DONE)
-* User picks their study rooms with a global timer (DONE) http://g.recordit.co/m30uCEm28x.gif
-* User picks their study rooms with a video chat
+* User picks their study rooms with a global timer (DONE) http://g.recordit.co/fSfsCjysc1.gif
+* User picks their study rooms with a video chat  (IN PROGRESS) http://g.recordit.co/u0S8mkzPYw.gif
 * Personalized/ default home page for each user
 * Profile pages for each user (DONE)
 * Settings (Accessibility, Notification, General, etc.)
