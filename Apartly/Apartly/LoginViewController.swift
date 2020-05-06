@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class ApratlyLoginViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
