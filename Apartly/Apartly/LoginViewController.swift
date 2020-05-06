@@ -17,15 +17,26 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func emailText(_ sender: Any) {
-    }
+   
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
     
-    @IBAction func passwordText(_ sender: Any) {
-    }
     
     @IBAction func onLogin(_ sender: Any) {
+        let username = emailText.text!;
+        let password = passwordText.text!;
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if user != nil{
+                //we want to segue to the homepage when we get it
+                print("success");
+            }
+            else{
+                print("Error: \(error?.localizedDescription)");
+            }
+        }
+        
     }
-    
     /*
     // MARK: - Navigation
 

@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="1076.8115942028987" y="807.58928571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="rLb-x5-9JM">
             <objects>
-                <viewController id="pVU-IU-5VP" sceneMemberID="viewController">
+                <viewController id="pVU-IU-5VP" customClass="LoginViewController" customModule="Apartly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ofg-uA-g8P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,10 +164,7 @@
                                 <rect key="frame" x="32" y="691" width="350" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="passwordText:" destination="kqq-9Z-0cK" eventType="editingDidEnd" id="BSx-vh-2RR"/>
-                                </connections>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCQ-dm-Dc4">
                                 <rect key="frame" x="244" y="745" width="115" height="30"/>
@@ -179,6 +176,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
+                                    <action selector="onLogin:" destination="pVU-IU-5VP" eventType="touchUpInside" id="Y5G-hR-WTM"/>
                                     <action selector="onLogin:" destination="kqq-9Z-0cK" eventType="touchUpInside" id="zv8-Ah-Rl7"/>
                                 </connections>
                             </button>
@@ -208,6 +206,10 @@
                         <viewLayoutGuide key="safeArea" id="dV2-nY-3h8"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kl2-Xe-9RC"/>
+                    <connections>
+                        <outlet property="emailText" destination="Yna-J2-wd3" id="lBj-t0-viP"/>
+                        <outlet property="passwordText" destination="IYz-ub-Gxm" id="bSq-Kv-9CY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXW-4v-cRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="kqq-9Z-0cK" userLabel="Exit" sceneMemberID="exit"/>
