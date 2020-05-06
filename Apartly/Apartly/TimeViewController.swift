@@ -9,43 +9,18 @@
 import UIKit
 import AVFoundation
 
-class TimeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TimeViewController: UIViewController {
 
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var workUntilLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var secondDayLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var chatButton: UIButton!
     
     @IBOutlet weak var tableView: UITableView!
     
     
     let list = ["Tommy Kim", "Michael Kim", "Johnny Kim", "Tammy Kim", "Bobby Kim", "Tommy Kim", "Michael Kim", "Johnny Kim", "Tammy Kim", "Bobby Kim"]
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
-    }
-    
-    func imageWithImage(image:UIImage,scaledToSize newSize:CGSize)->UIImage{
-        UIGraphicsBeginImageContext( newSize )
-        image.draw(in: CGRect(x: 0,y: 0,width: newSize.width,height: newSize.height))
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return newImage!.withRenderingMode(.alwaysTemplate)
-    }
-
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-        cell.textLabel?.text = list[indexPath.row]
-        cell.imageView?.tintColor = UIColor.orange
-        cell.imageView?.image = imageWithImage(image: UIImage(named: "userPicture.png")!, scaledToSize: CGSize(width: 25, height: 25))
-        
-        cell.contentView.backgroundColor = UIColor.systemFill
-        
-        return cell
-    }
     
     
     var test = true
@@ -60,10 +35,17 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
         var transform : CGAffineTransform = CGAffineTransform(scaleX: 1.0, y: 6.0)
         progressBar.transform = transform
    
+        self.timeLabel.layer.cornerRadius = 20
+        self.workUntilLabel.layer.cornerRadius = 20
+        self.chatButton.layer.cornerRadius = 25
+        
+        
+        
         
         updateView()
         
     }
+
     
     func updateView() {
         let date = Date()
@@ -74,7 +56,7 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if (minutes >= 50 && test) {
             timeLabel.text = String(breakMinutes) + ":" + String("00")
-            timeLabel.frame.origin = CGPoint(x: 113, y: 270)
+            timeLabel.frame.origin = CGPoint(x: 113, y: 250)
             
             let workHour = hour % 12 + 1
             workUntilLabel.text = "Work: \(workHour):00"
@@ -109,7 +91,6 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             timeLabel.text = ("\(hour)" + ":" + minuteDisplay)
             dayLabel.text = checkDay
-            secondDayLabel.text = checkDay
             workUntilLabel.text = "Break: \(hour):50"
         
             let seconds = 1.0
@@ -131,7 +112,6 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func createBreakScreen () {
         dayLabel.isHidden = true
-        secondDayLabel.isHidden = true
         progressBar.isHidden = true
         
         
@@ -155,7 +135,6 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 workUntilLabel.isHidden = false
                 dayLabel.isHidden = false
-                secondDayLabel.isHidden = false
                 progressBar.isHidden = false
                 //test = false
                 
@@ -174,6 +153,14 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
     }
+    
+    func imageWithImage(image:UIImage,scaledToSize newSize:CGSize)->UIImage{
+        UIGraphicsBeginImageContext( newSize )
+        image.draw(in: CGRect(x: 0,y: 0,width: newSize.width,height: newSize.height))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!.withRenderingMode(.alwaysTemplate)
+    }
 
     /*
     // MARK: - Navigation
@@ -185,4 +172,28 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     */
 
+}
+
+
+extension TimeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+        cell.textLabel?.text = list[indexPath.row]
+        cell.imageView?.tintColor = UIColor.orange
+        cell.imageView?.image = imageWithImage(image: UIImage(named: "userPicture.png")!, scaledToSize: CGSize(width: 25, height: 25))
+        
+        cell.contentView.backgroundColor = UIColor.systemFill
+        
+        return cell
+    }
 }
