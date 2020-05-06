@@ -9,16 +9,48 @@
 import UIKit
 import AVFoundation
 
-class TimeViewController: UIViewController {
+class TimeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var workUntilLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var secondDayLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    let list = ["Tommy Kim", "Michael Kim", "Johnny Kim", "Tammy Kim", "Bobby Kim", "Tommy Kim", "Michael Kim", "Johnny Kim", "Tammy Kim", "Bobby Kim"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    func imageWithImage(image:UIImage,scaledToSize newSize:CGSize)->UIImage{
+        UIGraphicsBeginImageContext( newSize )
+        image.draw(in: CGRect(x: 0,y: 0,width: newSize.width,height: newSize.height))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!.withRenderingMode(.alwaysTemplate)
+    }
+
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+        cell.textLabel?.text = list[indexPath.row]
+        cell.imageView?.tintColor = UIColor.orange
+        cell.imageView?.image = imageWithImage(image: UIImage(named: "userPicture.png")!, scaledToSize: CGSize(width: 25, height: 25))
+        
+        cell.contentView.backgroundColor = UIColor.systemFill
+        
+        return cell
+    }
+    
+    
     var test = true
-    var breakMinutes = 1
-    var breakSeconds = 10
+    var breakMinutes: Int = 0
+    var breakSeconds: Int = 0
     var timer = Timer()
     
     override func viewDidLoad() {
@@ -50,6 +82,9 @@ class TimeViewController: UIViewController {
             let systemSoundID: SystemSoundID = 1016
             AudioServicesPlaySystemSound (systemSoundID)
             createAlert(title: "Break Time", message: "\nCome back in 10 minutes!")
+            
+            breakMinutes = 60 - minutes
+            breakSeconds = 60 - calendar.component(.second, from:date)
             
             createBreakScreen()
         } else {
