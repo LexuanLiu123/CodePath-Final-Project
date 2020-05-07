@@ -12,7 +12,6 @@
 		1364158C24540EC80075C8F9 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364158B24540EC80075C8F9 /* CustomNavController.swift */; };
 		13AF5126246258FD00EAAF3D /* userPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 13AF5125246258FC00EAAF3D /* userPicture.png */; };
 		13AF512C24625D1E00EAAF3D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF512724625D1D00EAAF3D /* Login.storyboard */; };
-		13AF512D24625D1E00EAAF3D /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF512924625D1D00EAAF3D /* TimeViewController.swift */; };
 		13AF512E24625D1E00EAAF3D /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF512A24625D1D00EAAF3D /* Timer.storyboard */; };
 		13AF51342462685D00EAAF3D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF51332462685D00EAAF3D /* ChatViewController.swift */; };
 		7C5F524C244CE4DE008B10B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F524B244CE4DE008B10B3 /* AppDelegate.swift */; };
@@ -47,7 +46,6 @@
 		1364158B24540EC80075C8F9 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
 		13AF5125246258FC00EAAF3D /* userPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userPicture.png; path = ../../../../userPicture.png; sourceTree = "<group>"; };
 		13AF512824625D1D00EAAF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
-		13AF512924625D1D00EAAF3D /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		13AF512B24625D1D00EAAF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Timer.storyboard; sourceTree = "<group>"; };
 		13AF51332462685D00EAAF3D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		7C5F5248244CE4DE008B10B3 /* Apartly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apartly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,13 +116,12 @@
 				13AF5125246258FC00EAAF3D /* userPicture.png */,
 				7C5F524F244CE4DE008B10B3 /* ViewController.swift */,
 				1364158B24540EC80075C8F9 /* CustomNavController.swift */,
-				135E3529244D62710052853C /* TimeViewController.swift */,
 				136415892453C98F0075C8F9 /* sunset.jpg */,
 				7C5F5254244CE4E2008B10B3 /* Assets.xcassets */,
 				7C5F5256244CE4E2008B10B3 /* LaunchScreen.storyboard */,
 				13AF512724625D1D00EAAF3D /* Login.storyboard */,
 				13AF512A24625D1D00EAAF3D /* Timer.storyboard */,
-				13AF512924625D1D00EAAF3D /* TimeViewController.swift */,
+				135E3529244D62710052853C /* TimeViewController.swift */,
 				13AF51332462685D00EAAF3D /* ChatViewController.swift */,
 				7C5F5259244CE4E2008B10B3 /* Info.plist */,
 			);
@@ -284,7 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5F5250244CE4DE008B10B3 /* ViewController.swift in Sources */,
-				13AF512D24625D1E00EAAF3D /* TimeViewController.swift in Sources */,
 				135E352A244D62710052853C /* TimeViewController.swift in Sources */,
 				13AF51342462685D00EAAF3D /* ChatViewController.swift in Sources */,
 				7C5F524C244CE4DE008B10B3 /* AppDelegate.swift in Sources */,

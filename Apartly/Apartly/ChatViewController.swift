@@ -32,7 +32,7 @@ class ChatViewController: UIViewController {
         var hour = calendar.component(.hour, from: date)
         let minutes = calendar.component(.minute, from: date)
         
-        if (true) {
+        if (minutes >= 50) {
             let breakMinutes = 60 - minutes
             let breakSeconds = 60 - calendar.component(.second, from:date)
             
