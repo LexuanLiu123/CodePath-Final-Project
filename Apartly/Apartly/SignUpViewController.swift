@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignUpViewController: UIViewController {
 
@@ -16,7 +17,30 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    @IBAction func onSignUp(_ sender: Any) {
+        var user = PFUser()
+        user.username = emailTextField.text;
+        user.password = passwordTextField.text;
+        
+        user.signUpInBackground { (success, error) in
+            if success{
+                self.performSegue(withIdentifier:"signUpToHome", sender:nil)
+            }
+            else{
+                print("Error:\(error?.localizedDescription)")
+            }
+            
+        }
+        
+      
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 

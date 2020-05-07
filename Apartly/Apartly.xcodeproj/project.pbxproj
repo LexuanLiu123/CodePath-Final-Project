@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,12 +13,17 @@
 		13AF5126246258FD00EAAF3D /* userPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 13AF5125246258FC00EAAF3D /* userPicture.png */; };
 		13AF512E24625D1E00EAAF3D /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF512A24625D1D00EAAF3D /* Timer.storyboard */; };
 		13AF51342462685D00EAAF3D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF51332462685D00EAAF3D /* ChatViewController.swift */; };
+		1E1E5ADB573DA0E020C9EE59 /* Pods_Apartly_ApartlyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D75EE3F53BF84B73BFB3BF99 /* Pods_Apartly_ApartlyUITests.framework */; };
+		6F261C272453FBEB0028750C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F261C262453FBEB0028750C /* LoginViewController.swift */; };
+		6F261C2924584FB00028750C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F261C2824584FAF0028750C /* SignUpViewController.swift */; };
 		7C5F524C244CE4DE008B10B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F524B244CE4DE008B10B3 /* AppDelegate.swift */; };
 		7C5F524E244CE4DE008B10B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F524D244CE4DE008B10B3 /* SceneDelegate.swift */; };
 		7C5F5250244CE4DE008B10B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F524F244CE4DE008B10B3 /* ViewController.swift */; };
 		7C5F5255244CE4E2008B10B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F5254244CE4E2008B10B3 /* Assets.xcassets */; };
 		7C5F5263244CE4E2008B10B3 /* ApartlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F5262244CE4E2008B10B3 /* ApartlyTests.swift */; };
 		7C5F526E244CE4E2008B10B3 /* ApartlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F526D244CE4E2008B10B3 /* ApartlyUITests.swift */; };
+		8A8AB1EF5AC3A889F60F57FC /* Pods_Apartly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2461B938F31D2CFC1C251E9F /* Pods_Apartly.framework */; };
+		91E231E3A71875D5E697BA51 /* Pods_ApartlyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD54359D82121B1B3113E68 /* Pods_ApartlyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,13 @@
 		13AF5125246258FC00EAAF3D /* userPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userPicture.png; path = ../../../../userPicture.png; sourceTree = "<group>"; };
 		13AF512B24625D1D00EAAF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Timer.storyboard; sourceTree = "<group>"; };
 		13AF51332462685D00EAAF3D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		185371050D1BEFAA7122E343 /* Pods-Apartly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apartly.debug.xcconfig"; path = "Target Support Files/Pods-Apartly/Pods-Apartly.debug.xcconfig"; sourceTree = "<group>"; };
+		2461B938F31D2CFC1C251E9F /* Pods_Apartly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apartly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3BFD357A37039C15252B07 /* Pods-Apartly-ApartlyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apartly-ApartlyUITests.release.xcconfig"; path = "Target Support Files/Pods-Apartly-ApartlyUITests/Pods-Apartly-ApartlyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F261C262453FBEB0028750C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6F261C2824584FAF0028750C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		74F5F8CC129C0EEE8965D79F /* Pods-ApartlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApartlyTests.debug.xcconfig"; path = "Target Support Files/Pods-ApartlyTests/Pods-ApartlyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		760C7CBA5BE982E643E3B4BF /* Pods-Apartly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apartly.release.xcconfig"; path = "Target Support Files/Pods-Apartly/Pods-Apartly.release.xcconfig"; sourceTree = "<group>"; };
 		7C5F5248244CE4DE008B10B3 /* Apartly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apartly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5F524B244CE4DE008B10B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5F524D244CE4DE008B10B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +69,10 @@
 		7C5F5269244CE4E2008B10B3 /* ApartlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApartlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5F526D244CE4E2008B10B3 /* ApartlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartlyUITests.swift; sourceTree = "<group>"; };
 		7C5F526F244CE4E2008B10B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0A3727CD763F90C6223903 /* Pods-Apartly-ApartlyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apartly-ApartlyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Apartly-ApartlyUITests/Pods-Apartly-ApartlyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFA6E9C1EC8B557945CF868E /* Pods-ApartlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApartlyTests.release.xcconfig"; path = "Target Support Files/Pods-ApartlyTests/Pods-ApartlyTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFD54359D82121B1B3113E68 /* Pods_ApartlyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApartlyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75EE3F53BF84B73BFB3BF99 /* Pods_Apartly_ApartlyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apartly_ApartlyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8AB1EF5AC3A889F60F57FC /* Pods_Apartly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E231E3A71875D5E697BA51 /* Pods_ApartlyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1E5ADB573DA0E020C9EE59 /* Pods_Apartly_ApartlyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16EBBA37AA9D609D87401259 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2461B938F31D2CFC1C251E9F /* Pods_Apartly.framework */,
+				D75EE3F53BF84B73BFB3BF99 /* Pods_Apartly_ApartlyUITests.framework */,
+				CFD54359D82121B1B3113E68 /* Pods_ApartlyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		486E7F3C6FDC00B764F6D6B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				185371050D1BEFAA7122E343 /* Pods-Apartly.debug.xcconfig */,
+				760C7CBA5BE982E643E3B4BF /* Pods-Apartly.release.xcconfig */,
+				CE0A3727CD763F90C6223903 /* Pods-Apartly-ApartlyUITests.debug.xcconfig */,
+				5F3BFD357A37039C15252B07 /* Pods-Apartly-ApartlyUITests.release.xcconfig */,
+				74F5F8CC129C0EEE8965D79F /* Pods-ApartlyTests.debug.xcconfig */,
+				CFA6E9C1EC8B557945CF868E /* Pods-ApartlyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7C5F523F244CE4DE008B10B3 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +133,8 @@
 				7C5F5261244CE4E2008B10B3 /* ApartlyTests */,
 				7C5F526C244CE4E2008B10B3 /* ApartlyUITests */,
 				7C5F5249244CE4DE008B10B3 /* Products */,
+				486E7F3C6FDC00B764F6D6B7 /* Pods */,
+				16EBBA37AA9D609D87401259 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +162,8 @@
 				135E3529244D62710052853C /* TimeViewController.swift */,
 				13AF51332462685D00EAAF3D /* ChatViewController.swift */,
 				7C5F5259244CE4E2008B10B3 /* Info.plist */,
+				6F261C262453FBEB0028750C /* LoginViewController.swift */,
+				6F261C2824584FAF0028750C /* SignUpViewController.swift */,
 			);
 			path = Apartly;
 			sourceTree = "<group>";
@@ -147,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5F5272244CE4E2008B10B3 /* Build configuration list for PBXNativeTarget "Apartly" */;
 			buildPhases = (
+				970CDA3173C53BDF1403CA26 /* [CP] Check Pods Manifest.lock */,
 				7C5F5244244CE4DE008B10B3 /* Sources */,
 				7C5F5245244CE4DE008B10B3 /* Frameworks */,
 				7C5F5246244CE4DE008B10B3 /* Resources */,
+				FC0A0BC5A9AD3B7106B04528 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5F5275244CE4E2008B10B3 /* Build configuration list for PBXNativeTarget "ApartlyTests" */;
 			buildPhases = (
+				6F631A12B88DE954C8DEB467 /* [CP] Check Pods Manifest.lock */,
 				7C5F525A244CE4E2008B10B3 /* Sources */,
 				7C5F525B244CE4E2008B10B3 /* Frameworks */,
 				7C5F525C244CE4E2008B10B3 /* Resources */,
@@ -182,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5F5278244CE4E2008B10B3 /* Build configuration list for PBXNativeTarget "ApartlyUITests" */;
 			buildPhases = (
+				B1071246F7D0969CFDE6CB11 /* [CP] Check Pods Manifest.lock */,
 				7C5F5265244CE4E2008B10B3 /* Sources */,
 				7C5F5266244CE4E2008B10B3 /* Frameworks */,
 				7C5F5267244CE4E2008B10B3 /* Resources */,
+				D7D60E0EF8D2C0A0CD055FBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,17 +318,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F631A12B88DE954C8DEB467 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApartlyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		970CDA3173C53BDF1403CA26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apartly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1071246F7D0969CFDE6CB11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apartly-ApartlyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7D60E0EF8D2C0A0CD055FBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Apartly-ApartlyUITests/Pods-Apartly-ApartlyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Apartly-ApartlyUITests/Pods-Apartly-ApartlyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Apartly-ApartlyUITests/Pods-Apartly-ApartlyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0A0BC5A9AD3B7106B04528 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Apartly/Pods-Apartly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Apartly/Pods-Apartly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Apartly/Pods-Apartly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C5F5244244CE4DE008B10B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F261C272453FBEB0028750C /* LoginViewController.swift in Sources */,
 				7C5F5250244CE4DE008B10B3 /* ViewController.swift in Sources */,
 				135E352A244D62710052853C /* TimeViewController.swift in Sources */,
 				13AF51342462685D00EAAF3D /* ChatViewController.swift in Sources */,
 				7C5F524C244CE4DE008B10B3 /* AppDelegate.swift in Sources */,
 				1364158C24540EC80075C8F9 /* CustomNavController.swift in Sources */,
 				7C5F524E244CE4DE008B10B3 /* SceneDelegate.swift in Sources */,
+				6F261C2924584FB00028750C /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +596,7 @@
 		};
 		7C5F5273244CE4E2008B10B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 185371050D1BEFAA7122E343 /* Pods-Apartly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +616,7 @@
 		};
 		7C5F5274244CE4E2008B10B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760C7CBA5BE982E643E3B4BF /* Pods-Apartly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +636,7 @@
 		};
 		7C5F5276244CE4E2008B10B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F5F8CC129C0EEE8965D79F /* Pods-ApartlyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +658,7 @@
 		};
 		7C5F5277244CE4E2008B10B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA6E9C1EC8B557945CF868E /* Pods-ApartlyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +680,7 @@
 		};
 		7C5F5279244CE4E2008B10B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE0A3727CD763F90C6223903 /* Pods-Apartly-ApartlyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +700,7 @@
 		};
 		7C5F527A244CE4E2008B10B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3BFD357A37039C15252B07 /* Pods-Apartly-ApartlyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
