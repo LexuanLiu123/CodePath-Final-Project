@@ -71,11 +71,15 @@ class TimeViewController: UIViewController {
             createBreakScreen()
         } else {
             var checkDay = "AM";
-            if (hour > 12) {
+            if (hour >= 12) {
                 checkDay = "PM"
             }
             
-            hour = hour % 12
+            if (hour == 0 || hour == 12) {
+                hour = 12
+            } else {
+                hour = hour % 12
+            }
 
             var minuteDisplay: String
             
