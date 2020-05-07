@@ -11,14 +11,12 @@
 		1364158A2453C98F0075C8F9 /* sunset.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 136415892453C98F0075C8F9 /* sunset.jpg */; };
 		1364158C24540EC80075C8F9 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364158B24540EC80075C8F9 /* CustomNavController.swift */; };
 		13AF5126246258FD00EAAF3D /* userPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 13AF5125246258FC00EAAF3D /* userPicture.png */; };
-		13AF512C24625D1E00EAAF3D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF512724625D1D00EAAF3D /* Login.storyboard */; };
 		13AF512E24625D1E00EAAF3D /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF512A24625D1D00EAAF3D /* Timer.storyboard */; };
 		13AF51342462685D00EAAF3D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF51332462685D00EAAF3D /* ChatViewController.swift */; };
 		7C5F524C244CE4DE008B10B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F524B244CE4DE008B10B3 /* AppDelegate.swift */; };
 		7C5F524E244CE4DE008B10B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F524D244CE4DE008B10B3 /* SceneDelegate.swift */; };
 		7C5F5250244CE4DE008B10B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F524F244CE4DE008B10B3 /* ViewController.swift */; };
 		7C5F5255244CE4E2008B10B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F5254244CE4E2008B10B3 /* Assets.xcassets */; };
-		7C5F5258244CE4E2008B10B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5F5256244CE4E2008B10B3 /* LaunchScreen.storyboard */; };
 		7C5F5263244CE4E2008B10B3 /* ApartlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F5262244CE4E2008B10B3 /* ApartlyTests.swift */; };
 		7C5F526E244CE4E2008B10B3 /* ApartlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F526D244CE4E2008B10B3 /* ApartlyUITests.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +43,6 @@
 		136415892453C98F0075C8F9 /* sunset.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sunset.jpg; path = ../../../../sunset.jpg; sourceTree = "<group>"; };
 		1364158B24540EC80075C8F9 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
 		13AF5125246258FC00EAAF3D /* userPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userPicture.png; path = ../../../../userPicture.png; sourceTree = "<group>"; };
-		13AF512824625D1D00EAAF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		13AF512B24625D1D00EAAF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Timer.storyboard; sourceTree = "<group>"; };
 		13AF51332462685D00EAAF3D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		7C5F5248244CE4DE008B10B3 /* Apartly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apartly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +50,6 @@
 		7C5F524D244CE4DE008B10B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7C5F524F244CE4DE008B10B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C5F5254244CE4E2008B10B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7C5F5257244CE4E2008B10B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C5F5259244CE4E2008B10B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5F525E244CE4E2008B10B3 /* ApartlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApartlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5F5262244CE4E2008B10B3 /* ApartlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartlyTests.swift; sourceTree = "<group>"; };
@@ -118,8 +114,6 @@
 				1364158B24540EC80075C8F9 /* CustomNavController.swift */,
 				136415892453C98F0075C8F9 /* sunset.jpg */,
 				7C5F5254244CE4E2008B10B3 /* Assets.xcassets */,
-				7C5F5256244CE4E2008B10B3 /* LaunchScreen.storyboard */,
-				13AF512724625D1D00EAAF3D /* Login.storyboard */,
 				13AF512A24625D1D00EAAF3D /* Timer.storyboard */,
 				135E3529244D62710052853C /* TimeViewController.swift */,
 				13AF51332462685D00EAAF3D /* ChatViewController.swift */,
@@ -250,10 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5F5258244CE4E2008B10B3 /* LaunchScreen.storyboard in Resources */,
 				7C5F5255244CE4E2008B10B3 /* Assets.xcassets in Resources */,
 				1364158A2453C98F0075C8F9 /* sunset.jpg in Resources */,
-				13AF512C24625D1E00EAAF3D /* Login.storyboard in Resources */,
 				13AF512E24625D1E00EAAF3D /* Timer.storyboard in Resources */,
 				13AF5126246258FD00EAAF3D /* userPicture.png in Resources */,
 			);
@@ -321,28 +313,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		13AF512724625D1D00EAAF3D /* Login.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13AF512824625D1D00EAAF3D /* Base */,
-			);
-			name = Login.storyboard;
-			sourceTree = "<group>";
-		};
 		13AF512A24625D1D00EAAF3D /* Timer.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				13AF512B24625D1D00EAAF3D /* Base */,
 			);
 			name = Timer.storyboard;
-			sourceTree = "<group>";
-		};
-		7C5F5256244CE4E2008B10B3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C5F5257244CE4E2008B10B3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

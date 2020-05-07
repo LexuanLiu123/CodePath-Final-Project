@@ -32,7 +32,7 @@ class TimeViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "sunset.jpg")!)
         
-        var transform : CGAffineTransform = CGAffineTransform(scaleX: 1.0, y: 6.0)
+        let transform : CGAffineTransform = CGAffineTransform(scaleX: 1.0, y: 6.0)
         progressBar.transform = transform
    
         self.timeLabel.layer.cornerRadius = 20
