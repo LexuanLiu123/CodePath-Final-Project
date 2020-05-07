@@ -6,12 +6,17 @@
 	<dict>
 		<key>Apartly.xcscheme_^#shared#^_</key>
 		<dict>
+<<<<<<< HEAD
+=======
 			<key>isShown</key>
 			<true/>
+>>>>>>> ec402d6941405ffa4442b229905acbfc2320c86d
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 	</dict>
+<<<<<<< HEAD
+=======
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>7C5F5247244CE4DE008B10B3</key>
@@ -30,5 +35,6 @@
 			<true/>
 		</dict>
 	</dict>
+>>>>>>> ec402d6941405ffa4442b229905acbfc2320c86d
 </dict>
 </plist>
