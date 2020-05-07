@@ -10,6 +10,7 @@
 		135E352A244D62710052853C /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E3529244D62710052853C /* TimeViewController.swift */; };
 		1364158A2453C98F0075C8F9 /* sunset.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 136415892453C98F0075C8F9 /* sunset.jpg */; };
 		1364158C24540EC80075C8F9 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1364158B24540EC80075C8F9 /* CustomNavController.swift */; };
+		13879DFD2463B16F00D81C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13879DFB2463B16F00D81C47 /* Main.storyboard */; };
 		13AF5126246258FD00EAAF3D /* userPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 13AF5125246258FC00EAAF3D /* userPicture.png */; };
 		13AF512E24625D1E00EAAF3D /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF512A24625D1D00EAAF3D /* Timer.storyboard */; };
 		13AF51342462685D00EAAF3D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF51332462685D00EAAF3D /* ChatViewController.swift */; };
@@ -47,6 +48,7 @@
 		135E3529244D62710052853C /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		136415892453C98F0075C8F9 /* sunset.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sunset.jpg; path = ../../../../sunset.jpg; sourceTree = "<group>"; };
 		1364158B24540EC80075C8F9 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+		13879DFC2463B16F00D81C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13AF5125246258FC00EAAF3D /* userPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userPicture.png; path = ../../../../userPicture.png; sourceTree = "<group>"; };
 		13AF512B24625D1D00EAAF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Timer.storyboard; sourceTree = "<group>"; };
 		13AF51332462685D00EAAF3D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				1364158B24540EC80075C8F9 /* CustomNavController.swift */,
 				136415892453C98F0075C8F9 /* sunset.jpg */,
 				7C5F5254244CE4E2008B10B3 /* Assets.xcassets */,
+				13879DFB2463B16F00D81C47 /* Main.storyboard */,
 				13AF512A24625D1D00EAAF3D /* Timer.storyboard */,
 				135E3529244D62710052853C /* TimeViewController.swift */,
 				13AF51332462685D00EAAF3D /* ChatViewController.swift */,
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5F5255244CE4E2008B10B3 /* Assets.xcassets in Resources */,
+				13879DFD2463B16F00D81C47 /* Main.storyboard in Resources */,
 				1364158A2453C98F0075C8F9 /* sunset.jpg in Resources */,
 				13AF512E24625D1E00EAAF3D /* Timer.storyboard in Resources */,
 				13AF5126246258FD00EAAF3D /* userPicture.png in Resources */,
@@ -469,6 +473,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		13879DFB2463B16F00D81C47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13879DFC2463B16F00D81C47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		13AF512A24625D1D00EAAF3D /* Timer.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
