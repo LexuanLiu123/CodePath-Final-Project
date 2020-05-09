@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="1077" y="927"/>
         </scene>
-        <!--TimerVC-->
+        <!--HomeVC-->
         <scene sceneID="5i5-Ad-lU2">
             <objects>
-                <viewControllerPlaceholder storyboardName="Timer" referencedIdentifier="TimerVC" id="M6s-Ze-Drv" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Timer" referencedIdentifier="HomeVC" id="M6s-Ze-Drv" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="mCI-SJ-f1v"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2OR-zC-35P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

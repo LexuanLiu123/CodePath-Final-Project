@@ -10,7 +10,7 @@
         <!--Study Hall-->
         <scene sceneID="23n-D1-0ZA">
             <objects>
-                <viewController id="l0k-Ir-Kpa" customClass="TimeViewController" customModule="Apartly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="l0k-Ir-Kpa" customClass="TimeViewController" customModule="Apartly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gAE-S0-rGp" userLabel="TimeView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,12 +97,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u13-7J-Uen" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4610.144927536232" y="133.92857142857142"/>
+            <point key="canvasLocation" x="5520.289855072464" y="133.92857142857142"/>
         </scene>
         <!--Chat Room-->
         <scene sceneID="N8b-BH-BeX">
             <objects>
-                <viewController id="6JP-Hk-Knc" customClass="ChatViewController" customModule="Apartly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="6JP-Hk-Knc" customClass="ChatViewController" customModule="Apartly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dFD-VI-WFj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,123 +165,137 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AeG-LB-EDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="49B-g3-Nw3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5466.666666666667" y="133.92857142857142"/>
+            <point key="canvasLocation" x="6376.811594202899" y="133.92857142857142"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="2fW-SV-G0b">
-            <objects>
-                <navigationController storyboardIdentifier="TimerVC" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="pDC-PX-fLf" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cqo-vP-Jaa">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="l0k-Ir-Kpa" kind="relationship" relationship="rootViewController" id="CzO-Qq-E7l"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w11-TT-bdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2935" y="134"/>
-        </scene>
-        <!--Home Screen View Controller-->
+        <!--Home-->
         <scene sceneID="LUf-4w-4Z8">
             <objects>
-                <viewController id="Tsx-iQ-3pq" customClass="HomeScreenViewController" customModule="Apartly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Tsx-iQ-3pq" customClass="HomeViewController" customModule="Apartly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVv-6o-Qxr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Happy studying!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfR-AP-bEi">
-                                <rect key="frame" x="41" y="73" width="333" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trending Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbl-iI-t9h">
-                                <rect key="frame" x="20" y="224" width="199" height="34"/>
+                                <rect key="frame" x="41" y="259" width="199" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggested Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-bs-ZO6">
-                                <rect key="frame" x="20" y="483" width="225" height="34"/>
+                                <rect key="frame" x="41" y="566" width="225" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EVU-ar-Ip4">
-                                <rect key="frame" x="31" y="266" width="158" height="157"/>
+                                <rect key="frame" x="31" y="301.5" width="158" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil.and.ellipsis.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kOD-Dt-Zsc">
-                                <rect key="frame" x="31" y="525" width="158" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="music.note.list" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gv7-5H-GXY">
-                                <rect key="frame" x="216" y="525" width="158" height="157"/>
+                                <rect key="frame" x="227" y="608.5" width="136" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sdh-1N-bbD">
-                                <rect key="frame" x="216" y="266" width="158" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE2-qF-ovz">
-                                <rect key="frame" x="79" y="421" width="63" height="21"/>
+                                <rect key="frame" x="79" y="476" width="63" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Writing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xR8-5K-PVW">
-                                <rect key="frame" x="264" y="421" width="55" height="21"/>
+                                <rect key="frame" x="268" y="476" width="55" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homework" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-gw-Kzr">
-                                <rect key="frame" x="59" y="661" width="83" height="21"/>
+                                <rect key="frame" x="59" y="757" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Practice music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5N-Q5-jJu">
-                                <rect key="frame" x="235" y="690" width="113" height="21"/>
+                                <rect key="frame" x="239" y="757" width="113" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil.and.ellipsis.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kOD-Dt-Zsc">
+                                <rect key="frame" x="31" y="577" width="158" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfR-AP-bEi">
+                                <rect key="frame" x="41" y="125" width="333" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Happy studying!">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="42" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znm-HQ-0DS">
+                                <rect key="frame" x="41" y="306" width="148" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="l0k-Ir-Kpa" kind="show" id="jYE-d5-nMy"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sdh-1N-bbD">
+                                <rect key="frame" x="216" y="303.5" width="158" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="0eD-x1-Yy0"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="qMw-HM-vzO"/>
                     <connections>
-                        <outlet property="homeworkView" destination="kOD-Dt-Zsc" id="WLs-2i-77x"/>
-                        <outlet property="musicView" destination="gv7-5H-GXY" id="pHf-rM-NA6"/>
-                        <outlet property="readingView" destination="EVU-ar-Ip4" id="cIr-qK-jDi"/>
-                        <outlet property="writingView" destination="sdh-1N-bbD" id="98h-fd-CTf"/>
+                        <outlet property="happyLabel" destination="qfR-AP-bEi" id="5IW-wl-OHx"/>
+                        <outlet property="homeworkImg" destination="kOD-Dt-Zsc" id="Epi-5F-QHs"/>
+                        <outlet property="musicImg" destination="gv7-5H-GXY" id="ngD-uZ-fqr"/>
+                        <outlet property="readingImg" destination="EVU-ar-Ip4" id="rVt-VV-0l6"/>
+                        <outlet property="writingImg" destination="sdh-1N-bbD" id="mVw-nS-1kb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abc-II-rZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3807" y="717"/>
+            <point key="canvasLocation" x="4628.985507246377" y="133.92857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xpr-5n-now">
+            <objects>
+                <navigationController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="gdn-8p-T30" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VFd-1B-1Of">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="19"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tsx-iQ-3pq" kind="relationship" relationship="rootViewController" id="Tfg-6c-URJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67U-td-jGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3718.840579710145" y="133.92857142857142"/>
         </scene>
     </scenes>
     <resources>

@@ -10,9 +10,21 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var happyLabel: UILabel!
+    
+    @IBOutlet weak var readingImg: UIImageView!
+    
+    @IBOutlet weak var writingImg: UIImageView!
+    
+    @IBOutlet weak var homeworkImg: UIImageView!
+
+    @IBOutlet weak var musicImg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "sunset.jpg")!)
+        
+        self.happyLabel.layer.cornerRadius = 20
         // Do any additional setup after loading the view.
     }
     
