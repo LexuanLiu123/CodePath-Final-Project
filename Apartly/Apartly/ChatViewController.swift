@@ -23,6 +23,7 @@ class ChatViewController: UIViewController, UITextFieldDelegate {
     @IBAction func sendChat(_ sender: Any) {
         let username = user?.username ?? "N/A"
         list.append("\(username): \(chatField.text!)")
+        chatField.text = ""
         
     }
     
@@ -43,8 +44,8 @@ class ChatViewController: UIViewController, UITextFieldDelegate {
     func initializeUserList() {
         
         list.append("Tommy Kim: Hi")
-        list.append("Michael Kim: What's up!")
-        list.append("Johnny Kim: Nothing much")
+        list.append("Mubarek Mussa: What's up!")
+        list.append("Judy Liu: Nothing much")
         
     }
     

@@ -55,7 +55,10 @@ class TimeViewController: UIViewController {
         
         list.append(user?.username ?? "hi")
         list.append("Tommy Kim")
-        list.append("John Kim")
+        list.append("Mubarek Mussa")
+        list.append("Judy Liu")
+        list.append("Srikar Prayaga")
+        list.append("Victoria Edeeva")
         
     }
 
