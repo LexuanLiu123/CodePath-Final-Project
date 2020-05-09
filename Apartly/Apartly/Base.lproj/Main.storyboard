@@ -113,7 +113,6 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="onSignUp:" destination="kMT-FA-Kc8" eventType="touchUpInside" id="csR-ax-rMI"/>
-                                    <segue destination="ZjG-7U-cO3" kind="presentation" identifier="signUpToHome" id="2M7-XN-g5g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -123,11 +122,22 @@
                     <connections>
                         <outlet property="emailTextField" destination="0Bh-gG-aLG" id="iHU-ld-hMb"/>
                         <outlet property="passwordTextField" destination="9eT-VD-drW" id="8aE-5h-fm3"/>
+                        <segue destination="M6s-Ze-Drv" kind="show" identifier="signUpToHome" id="4ui-II-XC9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGI-79-ezl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076.8115942028987" y="807.58928571428567"/>
+            <point key="canvasLocation" x="1077" y="927"/>
+        </scene>
+        <!--TimerVC-->
+        <scene sceneID="5i5-Ad-lU2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Timer" referencedIdentifier="TimerVC" id="M6s-Ze-Drv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mCI-SJ-f1v"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2OR-zC-35P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863" y="794"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="rLb-x5-9JM">
@@ -217,6 +227,7 @@
                     <connections>
                         <outlet property="emailText" destination="Yna-J2-wd3" id="lBj-t0-viP"/>
                         <outlet property="passwordText" destination="IYz-ub-Gxm" id="bSq-Kv-9CY"/>
+                        <segue destination="M6s-Ze-Drv" kind="show" identifier="loginToHome" id="GTW-7a-vLC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXW-4v-cRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -224,22 +235,10 @@
             </objects>
             <point key="canvasLocation" x="1076.8115942028987" y="133.92857142857142"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="kmR-3m-LaP">
-            <objects>
-                <viewController id="ZjG-7U-cO3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="q31-Fn-pjC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="75h-86-pxg"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xdi-24-e4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1985" y="359"/>
-        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4ui-II-XC9"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2020-04-19 at 1.09.40 PM" width="786" height="614"/>
     </resources>

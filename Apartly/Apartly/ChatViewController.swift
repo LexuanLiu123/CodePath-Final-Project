@@ -7,25 +7,51 @@
 //
 
 import UIKit
+import Parse
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var chatField: UITextField!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    let list = ["Tommy Kim: Hi", "Michael Kim: What's up!", "Johnny Kim: Nothing much"]
+    
+    var list = [String]()
+
+    let user = PFUser.current()
  
+    
+    @IBAction func sendChat(_ sender: Any) {
+        let username = user?.username ?? "N/A"
+        list.append("\(username): \(chatField.text!)")
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateTableContentInset()
+
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "sunset.jpg")!)
         self.timeLabel.layer.cornerRadius = 20
+        
+        initializeUserList()
+        chatField.delegate = self
         // Do any additional setup after loading the view.
         
         updateView()
     }
     
+    func initializeUserList() {
+        
+        list.append("Tommy Kim: Hi")
+        list.append("Michael Kim: What's up!")
+        list.append("Johnny Kim: Nothing much")
+        
+    }
+    
     func updateView() {
+        updateTableContentInset()
+        tableView.reloadData()
+        
         let date = Date()
         let calendar = Calendar.current
         
@@ -33,7 +59,7 @@ class ChatViewController: UIViewController {
         let minutes = calendar.component(.minute, from: date)
         
         if (minutes >= 50) {
-            let breakMinutes = 60 - minutes
+            let breakMinutes = 60 - minutes - 1
             let breakSeconds = 60 - calendar.component(.second, from:date)
             
             if (breakSeconds == 60) {
@@ -66,7 +92,7 @@ class ChatViewController: UIViewController {
         
         let seconds = 1.0
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            self.viewDidLoad()
+            self.updateView()
         }
     }
   
@@ -126,4 +152,14 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
         self.tableView.contentInset = UIEdgeInsets(top: contentInsetTop,left: 0,bottom: 0,right: 0)
     }
     
+    
+    
+    
+}
+
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

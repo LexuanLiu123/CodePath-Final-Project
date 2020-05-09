@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Parse
 
 class TimeViewController: UIViewController {
 
@@ -19,8 +20,11 @@ class TimeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+
     
-    let list = ["Tommy Kim", "Michael Kim", "Johnny Kim", "Tammy Kim", "Bobby Kim", "Tommy Kim", "Michael Kim", "Johnny Kim", "Tammy Kim", "Bobby Kim"]
+    let user = PFUser.current()
+    
+    var list = [String]()
     
     
     var test = true
@@ -28,21 +32,30 @@ class TimeViewController: UIViewController {
     var breakSeconds: Int = 0
     var timer = Timer()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "sunset.jpg")!)
         
         let transform : CGAffineTransform = CGAffineTransform(scaleX: 1.0, y: 6.0)
         progressBar.transform = transform
+        
    
         self.timeLabel.layer.cornerRadius = 20
         self.workUntilLabel.layer.cornerRadius = 20
         self.chatButton.layer.cornerRadius = 25
-        
-        
-        
+
+        updateUserList()
         
         updateView()
+        
+    }
+    
+    func updateUserList() {
+        
+        list.append(user?.username ?? "hi")
+        list.append("Tommy Kim")
+        list.append("John Kim")
         
     }
 
@@ -200,4 +213,8 @@ extension TimeViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    
+    
+    
 }

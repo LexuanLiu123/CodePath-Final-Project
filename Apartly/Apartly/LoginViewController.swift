@@ -29,7 +29,8 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             if user != nil{
                 //we want to segue to the homepage when we get it
-                print("success");
+                
+                self.performSegue(withIdentifier:"loginToHome", sender:nil)
             }
             else{
                 print("Error: \(error?.localizedDescription)");
